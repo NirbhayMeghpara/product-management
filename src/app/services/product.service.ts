@@ -23,7 +23,7 @@ export class ProductService {
   }
 
   updateProduct(product: any): Observable<any> {
-    return this.http.put<any>(`${this.appUrl}/products/${product.id}`, product);
+    return this.http.put<any>(`${this.appUrl}/products/${product._id}`, product);
   }
 
   deleteProduct(id: number): Observable<void> {

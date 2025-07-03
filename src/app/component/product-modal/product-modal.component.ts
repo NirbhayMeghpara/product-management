@@ -77,8 +77,8 @@ export class ProductModalComponent implements OnInit, OnChanges {
         quantity: this.productForm.value.quantity
       };
 
-      if (this.isEditMode && this.product && this.product.id) {
-        productData['id'] = this.product.id;
+      if (this.isEditMode && this.product && this.product._id) {
+        productData['_id'] = this.product._id;
       }
 
       setTimeout(() => {

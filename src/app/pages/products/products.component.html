@@ -8,7 +8,7 @@
   </div>
 
   <div class="products-grid">
-    <app-product-card [product]="prod" (edit)="editProduct(prod.id)" (delete)="deleteProduct(prod.id)"  *ngFor="let prod of products"></app-product-card>
+    <app-product-card [product]="prod" (edit)="editProduct(prod._id)" (delete)="deleteProduct(prod._id)"  *ngFor="let prod of products"></app-product-card>
   </div>
 </div>
 

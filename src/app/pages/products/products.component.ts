@@ -36,7 +36,7 @@ export class ProductsComponent implements OnInit {
 
   onProductSave(product: any) {
     console.log('Product saved');
-    if (product.id) {
+    if (product._id) {
       this.productService.updateProduct(product).subscribe(() => {
         this.loadProducts();
       });
@@ -54,7 +54,7 @@ export class ProductsComponent implements OnInit {
 
   editProduct(id: number) {
     console.log('Edit product', id);
-    const product = this.products.find(p => p.id === id);
+    const product = this.products.find(p => p._id === id);
 
     if (product) {
       this.selectedProduct = product;

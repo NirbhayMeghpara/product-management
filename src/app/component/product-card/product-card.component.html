@@ -27,10 +27,10 @@
         {{ product.quantity === 0 ? 'Out of Stock' : (product.quantity <= 10 ? 'Low Stock' : 'In Stock') }}
       </span>
       <div class="action-buttons">
-        <button class="action-btn edit-btn" (click)="onEdit(product.id)">
+        <button class="action-btn edit-btn" (click)="onEdit(product._id)">
           <i class="material-icons">edit</i>
         </button>
-        <button class="action-btn delete-btn" (click)="onDelete(product.id)">
+        <button class="action-btn delete-btn" (click)="onDelete(product._id)">
           <i class="material-icons">delete</i>
         </button>
       </div>
